@@ -1,4 +1,4 @@
-# Racoon
+# All In One Downloader
 
 A media downloader written in HTML, JS with pico css.
 
@@ -6,12 +6,12 @@ A media downloader written in HTML, JS with pico css.
 
 ## Author
 
-Shailendra Maurya  
-Github Profile: [shailendramaurya](https://github.com/shailendramaurya)
+Faizan Gondal  
+Github Profile: [shailendramaurya](https://github.com/fazi-gondal)
 
 ## Description
 
-Racoon is a media downloader that allows you to easily download videos, posts from social media. It is built using HTML, CSS & JS with pico css.
+All In One Downloader is a media downloader that allows you to easily download videos, posts from social media. It is built using HTML, CSS & JS with pico css.
 
 ** Currently in beta, & UI is not well optimised for desktops **
 
@@ -38,22 +38,6 @@ Racoon is a media downloader that allows you to easily download videos, posts fr
   - twitter videos & voice
   - vine archive
   - vk video & clips
-
-Racoon is not affiliated with any services listed above in any way, it just fetches the data which are publically available on internet via api.
-
-*- Special thanks to [cobalt](https://github.com/imputnet/cobalt) for backend API*
-
-## Features Yet to Implement
- 
- We are open for features suggestions 😄
- 
-## Integration with your own app
-
- Racoon can be integrated in any web app, just pass parameter ```?url=MEDIA_URL_HERE``` to ```https://shailendramaurya.github.io/racoon```, and it will start download..... Also, if you want to download audio only pass ```?audio=true```. Thank you !
-
-## Contributing
-
-Pull requests and contributions are welcome. Feel free to contribute to the project by submitting bug reports, feature requests, or enhancements. Together, we can make Racoon even better!
 
 ## License
 
