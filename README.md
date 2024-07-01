@@ -7,7 +7,7 @@ A media downloader written in HTML, JS with pico css.
 ## Author
 
 Faizan Gondal  
-Github Profile: [shailendramaurya](https://github.com/fazi-gondal)
+Github Profile: [Fazi gondal](https://github.com/fazi-gondal)
 
 ## Description
 
