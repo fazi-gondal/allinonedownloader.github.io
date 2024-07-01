@@ -1,6 +1,6 @@
 {
-  "name": "Racoon",
-  "short_name": "Racoon",
+  "name": "All in one downloader",
+  "short_name": "all in one downloader",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#ffffff",
