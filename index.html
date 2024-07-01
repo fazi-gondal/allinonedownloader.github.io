@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="description" content="All in One Downloader Support all Social media platform like tiktok,instagram and youtube.">
+	<meta name="author" content="Faizan Gondal">
+	<meta name="theme-color" content="white">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="keywords" content="instagram, tiktok, youtube, utube, youtube video, youtube downloader, youtube video download, racoon">
+	<link rel="manifest" href="racoon.webmanifest">
+
+	<title>All in One Downloader</title>
+
+	<link rel="icon" type="image/png" href="logo.png">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico/css/pico.classless.min.css">
+	<link rel="stylesheet" href="https://css.gg/css?=website|loadbar-alt|check|info">
+	<link rel="stylesheet" href="racoon.css">
+	<script defer src="js/index.js"></script>
+	<script defer src="js/modal.js"></script>
+</head>
+
+<body>
+
+	<header align="center">
+		<h1><img src="logo.png" class="logo">All in One Downloader</h1>
+	</header>
+
+	<main class="container">
+		<form>
+			
+			<label for="vQuality">Select Video Quality</label>
+			<select id="vQuality">
+				<option value="144">144p</option>
+				<option value="240">240p</option>
+				<option value="360">360p</option>
+				<option value="480">480p</option>
+				<option value="720" selected>720p</option>
+				<option value="1080">1080p</option>
+			</select>
+			
+			<label for="aFormat">Select Audio Quality</label>
+			<select id="aFormat">
+				<option value="best">Best</option>
+				<option value="mp3">MP3</option>
+				<option value="ogg">OGG</option>
+				<option value="wav">WAV</option>
+				<option value="opus">Opus</option>
+			</select>
+			
+			<input type="checkbox" id="isAudioOnly">
+			<label for="isAudioOnly"> Audio Only</label>
+			<br><br>
+			<input type="url" id="url" placeholder="Input URL here" required>
+
+			<button type="submit" class="submitBtn">Download</button>
+
+		</form>
+		<div id="status">
+
+		</div>
+	</main>
+
+
+
+	<footer align="center">
+		<a class="contrast" data-target="about" onClick="toggleModal(event)">
+			About
+		</a>
+		<a class="contrast" data-target="supported-sites" onClick="toggleModal(event)">
+			Supported Sites
+		</a>
+
+		<dialog id="about">
+			<article>
+				<header>About</header>
+				<img width="50%" src="logo.png" class="logo" />
+				<br><br>
+				All in One Downloader is a lightweight media downloader written in HTML, CSS and JS with PicoCSS library.
+				<footer>Licensed under MIT, open-sourced at <a href="https://github.com/fazi-gondal">Github</a>.</footer>
+			</article>
+		</dialog>
+
+	</footer>
+	<dialog id="supported-sites">
+		<article>
+			<header>Supported Sites</header>
+			<pre>
+			  <br>
+			  All in One Downloader supported-sites
+• youtube videos, shorts & music
+• instagram reels & posts
+• tiktok videos, photos & audio
+• vimeo
+• pinterest videos & stories
+• reddit videos & gifs
+• bilibili.com videos
+• rutube videos
+• soundcloud
+• streamable.com
+• tumblr
+• twitch clips
+• twitter videos & voice
+• vine archive
+• vk video & clips
+			  </pre>
+		</article>
+	</dialog>
+
+
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('/sw.js')
+				.then((registration) => {
+					console.log('Service Worker registered with scope:', registration.scope);
+				})
+				.catch((error) => {
+					console.error('Service Worker registration failed:', error);
+				});
+		}
+	</script>
+
+</body>
+
+</html>
